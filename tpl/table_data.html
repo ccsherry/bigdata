@@ -1,0 +1,89 @@
+
+<div class="wrapper-md">
+    <ol class="breadcrumb" style="padding-left: 0；">
+
+              <li>
+
+                <i class="icon-home"></i>
+
+                <a href="index.html">首页</a> 
+
+                <i class="icon-angle-right"></i>
+
+              </li>
+
+              <li>
+
+                <a href="#">系统管理</a>
+
+                <i class="icon-angle-right"></i>
+
+              </li>
+
+              <li><a href="#">数据备份</a></li>
+
+    </ol>
+  <tabset class="tab-container">
+    <tab>
+      <tab-heading>
+        自动<span class="badge bg-danger badge-sm m-l-xs"></span>
+      </tab-heading>
+      <ul class="list-group list-group-alt list-group-lg no-borders pull-in m-b-none">
+        <li class="list-group-item">
+          <div class="clear">
+            <div class="col-sm-6">
+              <form name="formValidate" class="form-horizontal form-validation ng-pristine ng-invalid ng-invalid-required ng-valid-minlength ng-valid-maxlength ng-invalid-validator ng-invalid-b ng-invalid-a ng-valid-pattern">
+                         
+                    <div class="form-group">
+                      <label class="col-sm-3 control-label">时间</label>
+                      <div class="col-sm-9">
+                        <input class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required" placeholder="输入时间：" ng-model="f.a" required="" type="text">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-3 control-label">位置</label>
+                      <div class="col-sm-9">
+                        <input class="form-control" placeholder="输入位置："  type="text">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">周期</label>
+                        <div class="col-sm-9">
+                          <select class="form-control m-t ng-pristine ng-untouched ng-invalid ng-invalid-required" ng-model="f.b" required="">
+                              <option value="">Please choose</option>
+                              <option value="foo">Foo</option>
+                              <option value="bar">Bar</option>
+                          </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success" style="margin-left: 140px;">提交</button>
+                        <button type="submit" class="btn btn-red" style="margin-left: 20px;">取消</button>
+                    </div>                             
+                    
+              </form>
+            </div>
+        </li>
+      </ul>
+    </tab>
+    <tab>
+      <tab-heading>
+        手动<span class="badge bg-danger badge-sm m-l-xs"></span>
+      </tab-heading>
+      <ul class="list-group list-group-alt list-group-lg no-borders pull-in m-b-none">
+        <li class="list-group-item">
+          <div class="clear">
+            <div class="col-sm-6">
+                <form role="form" class="ng-pristine ng-valid">
+                    <div class="form-group">
+                      <label class="col-sm-3 control-label">位置</label>
+                      <input class="form-control col-sm-9" placeholder="Enter email" type="email">
+                    </div>
+                    <button type="submit" class="btn btn-sm btn-primary">提交</button>
+                </form>  
+          </div>
+        </li>
+      </ul>
+    </tab>
+  </tabset>
+</div>

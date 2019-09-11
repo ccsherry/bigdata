@@ -1,0 +1,70 @@
+      <!-- navbar header -->
+      <div class="navbar-header {{app.settings.navbarHeaderColor}}">
+        <button class="pull-right visible-xs dk" ui-toggle-class="show" data-target=".navbar-collapse">
+          <i class="glyphicon glyphicon-cog"></i>
+        </button>
+        <button class="pull-right visible-xs" ui-toggle-class="off-screen" data-target=".app-aside" ui-scroll="app">
+          <i class="glyphicon glyphicon-align-justify"></i>
+        </button>
+        <!-- brand -->
+        <a href="#/" class="navbar-brand text-lt">
+          <!-- <i class="fa fa-btc"></i> -->
+          <img src="img/lg.png">
+          <!-- <span class="hidden-folded m-l-xs">{{app.name}}</span> -->
+        </a>
+        <!-- / brand -->
+      </div>
+      <!-- / navbar header -->
+
+      <!-- navbar collapse -->
+      <div class="collapse pos-rlt navbar-collapse box-shadow {{app.settings.navbarCollapseColor}}">
+        <!-- buttons -->
+        <div class="nav navbar-nav hidden-xs">
+          <a href class="btn no-shadow navbar-btn" ng-click="app.settings.asideFolded = !app.settings.asideFolded">
+            <i class="fa {{app.settings.asideFolded ? 'fa-indent' : 'fa-dedent'}} fa-fw"></i>
+          </a>
+          <!-- <a href class="btn no-shadow navbar-btn" ui-toggle-class="show" target="#aside-user">
+            <i class="icon-user fa-fw"></i>
+          </a> -->
+        </div>
+        <!-- / buttons -->
+
+        <div class="nav navbar-nav ">
+          <h2 class="mainfont">三维通信无线网络大数据平台</h2>
+        </div>
+        <!-- nabar right -->
+        <ul class="nav navbar-nav navbar-right">
+          <!--全屏-->
+          
+
+
+
+          <li class="text-info">
+            <a href="#" tooltip-placement="bottom" tooltip="登录">              
+                <i class="icon-login"></i>
+            </a>
+          </li>
+
+          <li class="" >
+            <a ui-sref="#" tooltip-placement="bottom" tooltip="修改密码">             
+                <i class="icon-lock"></i>
+            </a>
+          </li>
+           <!--logout-->
+          <li class="" >
+            <a ui-sref="#" tooltip-placement="bottom" tooltip="退出">             
+                <i class="icon-power"></i>
+            </a>
+          </li>
+
+          <li class="hidden-xs">
+            <a ui-fullscreen tooltip-placement="bottom" tooltip="全屏"></a>
+          </li>
+
+          
+
+        </ul>
+        <!-- / navbar right -->
+
+      </div>
+      <!-- / navbar collapse -->

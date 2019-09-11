@@ -1,0 +1,299 @@
+
+<ul class="nav metismenu">
+
+          <li ng-class="{active:$state.includes('app.table')}">
+            <a ui-sref="app.table.home">
+              <i class="icon-globe"></i>
+              <span>全网概况</span>
+            </a>
+
+          </li>
+          <li ng-class="">
+            <a ui-sref="app.data_manage">
+              <!-- <span class="pull-right text-muted">
+                <i class="fa fa-fw fa-angle-right text"></i>
+                <i class="fa fa-fw fa-angle-down text-active"></i>
+              </span> -->
+              <i class="fa fa-folder-open"></i>
+              <span>数据管理</span>
+            </a>
+          </li>
+          <li ng-class="">
+            <a href class="#" >
+              <span class="pull-right text-muted">
+                <i class="fa fa-fw fa-angle-right text"></i>
+                <i class="fa fa-fw fa-angle-down text-active"></i>
+              </span>
+              <i class="glyphicon glyphicon-list"></i>
+              <span>网络规划</span>
+            </a>
+            <ul class="nav nav-sub dk">
+              <li ui-sref-active="active">
+                <a ui-sref="app.cover_map">
+                  <span>新区数据维护</span>
+                </a>
+              </li>
+              <li ui-sref-active="active">
+                <a ui-sref="app.hongguan_ping">
+                  <span>宏观评估</span>
+                </a>
+              </li>
+              <li ui-sref-active="active">
+                <a ui-sref="app.weiguan_sb">
+                  <span>微观识别</span>
+                </a>
+              </li>
+              <li ui-sref-active="active">
+                <a ui-sref="app.guihua_design">
+                  <span>待建库管理</span>
+                </a>
+              </li>
+              <li ui-sref-active="active">
+                <a ui-sref="app.guihua_design">
+                  <span>规划库管理</span>
+                </a>
+              </li>
+              <li ui-sref-active="active">
+                <a ui-sref="app.table_tab">
+                  <span>站点设计管理</span>
+                </a>
+              </li>
+             
+            </ul>
+          </li> 
+          <li ng-class="">
+            <a href class="auto" >
+              <span class="pull-right text-muted">
+                <i class="fa fa-fw fa-angle-right text"></i>
+                <i class="fa fa-fw fa-angle-down text-active"></i>
+              </span>
+              <i class="glyphicon glyphicon-list"></i>
+              <span>网络设计</span>
+            </a>
+            <ul class="nav nav-sub dk">
+              <li ui-sref-active="active">
+                <a ui-sref="app.zhandian_shuliang">
+                  <span>站点数量统计</span>
+                </a>
+              </li>
+              <li ui-sref-active="active">
+                <a ui-sref="app.zhandian_qijian">
+                  <span>站点有源器件统计</span>
+                </a>
+              </li>
+              <li ui-sref-active="active">
+                <a ui-sref="app.zhandian_cailiao">
+                  <span>站点材料统计</span>
+                </a>
+              </li>
+             
+            </ul>
+          </li>          
+          <li ng-class="">
+            <a href class="auto" >
+              <span class="pull-right text-muted">
+                <i class="fa fa-fw fa-angle-right text"></i>
+                <i class="fa fa-fw fa-angle-down text-active"></i>
+              </span>
+              <i class="glyphicon glyphicon-list"></i>
+              <span>网络维护</span>
+            </a>
+            <ul class="nav nav-sub dk">
+              <li ui-sref-active="active">
+                <a ui-sref="app.fault">
+                  <span>老旧隐患故障预测</span>
+                </a>
+              </li>
+              <li ui-sref-active="active">
+                <a ui-sref="#">
+                  <span>动力故障预测</span>
+                </a>
+              </li>
+              <li>
+                <a ui-sref="#">
+                  <span>传输/线路故障预测</span>
+                </a>
+              </li>
+              <li>
+                <a ui-sref="#">
+                  <span>设备故障预测</span>
+                </a>
+              </li>
+              <li>
+                <a ui-sref="#">
+                  <span>延伸系统故障预测</span>
+                </a>
+              </li>
+              <li>
+                <a ui-sref="#">
+                  <span>参数故障预测</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li ng-class="">
+            <a href class="auto" >
+              <span class="pull-right text-muted">
+                <i class="fa fa-fw fa-angle-right text"></i>
+                <i class="fa fa-fw fa-angle-down text-active"></i>
+              </span>
+              <i class="glyphicon glyphicon-list"></i>
+              <span>网络优化</span>
+            </a>
+            <ul class="nav nav-sub dk">
+              <li ui-sref-active="active">
+                <a ui-sref="app.table_zb">
+                  <span>重点指标集中呈现</span>
+                </a>
+              </li>
+              <li ui-sref-active="active">
+                <a ui-sref="app.qswlzl">
+                  <span>无线234g网络质量</span>
+                </a>
+              </li>
+              <li ui-sref-active="active">
+                <a ui-sref="app.table_23g">
+                  <span>23g详细设计</span>
+                </a>
+              </li>
+              <li ui-sref-active="active">
+                <a ui-sref="app.table_4g">
+                  <span>4g详细指标</span>
+                </a>
+              </li>
+              <!-- <li ui-sref-active="active">
+                <a ui-sref="app.4g">
+                  <span>热力图</span>
+                </a>
+              </li> -->
+              <li>
+                <a ui-sref="signin">
+                  <span translate="">Signin</span>
+                </a>
+              </li>
+            </ul>
+          </li>   
+          <!-- <li ng-class="">
+            <a href class="auto" >
+              <span class="pull-right text-muted">
+                <i class="fa fa-fw fa-angle-right text"></i>
+                <i class="fa fa-fw fa-angle-down text-active"></i>
+              </span>
+              <i class="glyphicon glyphicon-list"></i>
+              <span>设计审核</span>
+            </a>
+            <ul class="nav nav-sub dk">
+              <li ui-sref-active="active">
+                <a ui-sref="#">
+                  <span>图纸档案</span>
+                </a>
+              </li>
+              <li ui-sref-active="active">
+                <a ui-sref="#">
+                  <span>项目管理</span>
+                </a>
+              </li>
+              <li ui-sref-active="active">
+                <a ui-sref="app.table.tree">
+                  <span>统计报表</span>
+                </a>
+              </li>
+            </ul>
+          </li> -->
+          <li class="">
+            <a href class="auto">
+              <span class="pull-right text-muted">
+                <i class="fa fa-fw fa-angle-right text"></i>
+                <i class="fa fa-fw fa-angle-down text-active"></i>
+              </span>
+              <i class="glyphicon glyphicon-list"></i>
+              <span>系统管理</span>
+            </a>
+            <ul class="nav nav-sub dk">
+              <li ui-sref-active="active">
+                <a ui-sref="app.table.static" aria-expanded="true">
+                  <span>系统配置管理</span>
+                </a>
+              </li>
+              <li ui-sref-active="active">
+                <a ui-sref="app.table.canshu">
+                  <span>系统参数管理</span>
+                </a>
+              </li>
+              <li ui-sref-active="active">
+                <a ui-sref="app.table.datatable">
+                  <span>系统分类管理</span>
+                </a>
+              </li>
+              <li ui-sref-active="active">
+                <a ui-sref="app.table.footable">
+                  <span>地区管理</span>
+                </a>
+              </li>
+              <li ui-sref-active="active">
+                <a ui-sref="app.table.sys">
+                  <span>系统状态</span>
+                </a>
+              </li>
+              <li ui-sref-active="active">
+                <a ui-sref="app.table.data">
+                  <span>数据备份</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li ng-class="">
+            <a href class="auto" >
+              <span class="pull-right text-muted">
+                <i class="fa fa-fw fa-angle-right text"></i>
+                <i class="fa fa-fw fa-angle-down text-active"></i>
+              </span>
+              <i class="glyphicon glyphicon-list"></i>
+              <span>权限管理</span>
+            </a>
+            <ul class="nav nav-sub dk">
+              <li ui-sref-active="active">
+                <a ui-sref="app.table.tree">
+                  <span>角色管理</span>
+                </a>
+              </li>
+              <li ui-sref-active="active">
+                <a ui-sref="app.table.role">
+                  <span>模块管理</span>
+                </a>
+              </li>
+              <li ui-sref-active="active">
+                <a ui-sref="app.table.user">
+                  <span>用户管理</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- <li>
+                <a href=""><i class="fa fa-sitemap"></i> <span class="nav-label">{{ 'MENULEVELS' | translate }}</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li>
+                        <a href="">Third Level <span class="fa arrow"></span></a>
+                        <ul class="nav nav-third-level">
+                            <li>
+                                <a href="">Third Level Item</a>
+                            </li>
+                            <li>
+                                <a href="">Third Level Item</a>
+                            </li>
+                            <li>
+                                <a href="">Third Level Item</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li><a href="">Second Level Item</a></li>
+                    <li>
+                        <a href="">Second Level Item</a></li>
+                    <li>
+                        <a href="">Second Level Item</a></li>
+                </ul>
+            </li> -->
+
+</ul>
+<!-- / list

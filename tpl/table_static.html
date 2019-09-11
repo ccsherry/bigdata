@@ -1,0 +1,364 @@
+<div class="wrapper-md">
+    <ol class="breadcrumb" style="padding-left: 0；">
+
+              <li>
+
+                <i class="icon-home"></i>
+
+                <a href="index.html">首页</a> 
+
+                <i class="icon-angle-right"></i>
+
+              </li>
+
+              <li>
+
+                <a href="#">系统管理</a>
+
+                <i class="icon-angle-right"></i>
+
+              </li>
+
+              <li><a href="#">系统配置管理</a></li>
+
+    </ol>
+  <div class="panel panel-default">
+
+
+    <div class="row wrapper">
+    
+      <div class="col-md-6" ng-controller="ModalDemoCtrl">
+      <script type="text/ng-template" id="myModalContent.html">
+          <div ng-include="'tpl/modal.html'"></div>
+      </script>
+        <p style="margin-bottom: 0px;">
+          <button class="btn m-b-xs btn-sm btn-primary btn-addon" data-target="#static2" data-toggle="modal"><i class="fa fa-plus"></i>增加</button>
+          <button class="btn m-b-xs btn-sm btn-primary btn-addon" data-target="#static1" data-toggle="modal"><i class="fa fa-plus"></i>增加2</button>
+          <button class="btn m-b-xs btn-sm btn-info btn-addon"><i class="fa fa-trash-o"></i>删除</button>
+          <button class="btn m-b-xs btn-sm btn-success btn-addon"><i class="fa fa-minus"></i>修改</button>
+          <button class="btn m-b-xs btn-sm btn-warning btn-addon"><i class="fa fa-circle"></i>查看</button>
+        </p>
+      </div>
+      <div class="col-md-3"></div>
+      <div class="col-md-3">
+        <div class="input-group">
+            <input type="text" class="input-sm form-control" placeholder="Search">
+            <span class="input-group-btn">
+              <button class="btn btn-sm btn-default" type="button" ng-init="isCollapsed = true" ng-click="isCollapsed = !isCollapsed">Go!</button>
+              <button class="btn btn-sm btn-default" type="button">搜索</button>
+              <i class="icon-angle-down"></i>
+            </span>
+        </div>
+
+      </div>
+      
+
+    </div>
+    <div class="modal fade" id="static2">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+               <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+            </button>
+            <h4 class="modal-title">Modal title</h4>
+          </div>
+          <div class="modal-body">
+              <form class="form-inline" role="form">
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <label class="modallb col-md-3">编码</label>
+                    <input class="modalip form-control col-md-9" placeholder="Enter email" type="email">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label class="modallb col-md-3">名称</label>
+                    <input class="modalip form-control col-md-9" placeholder="Password" type="password">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <label class="modallb col-md-3">配置值</label>
+                    <input class="modalip form-control col-md-9" placeholder="Password" type="password">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label class="modallb col-md-3">系统类型</label>
+                    <input class="modalip form-control col-md-9" placeholder="Password" type="password">
+                  </div>
+                </div>
+              </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-primary">保存</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal fade" id="static1">
+      <div class="modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+               <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+            </button>
+            <h4 class="modal-title">Modal title</h4>
+          </div>
+          <div class="modal-body">
+              <form class="form-inline" role="form">
+                <div class="row">
+                  <div class="form-group col-md-4">
+                    <label class="modallb col-md-3">编码</label>
+                    <input class="modalip form-control col-md-9" placeholder="Enter email" type="email">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label class="modallb col-md-3">名称</label>
+                    <input class="modalip form-control col-md-9" placeholder="Password" type="password">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label class="modallb col-md-3">配置值</label>
+                    <input class="modalip form-control col-md-9" placeholder="Password" type="password">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-md-4">
+                    <label class="modallb col-md-3">配置值</label>
+                    <input class="modalip form-control col-md-9" placeholder="Password" type="password">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label class="modallb col-md-3">系统类型</label>
+                    <input class="modalip form-control col-md-9" placeholder="Password" type="password">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label class="modallb col-md-3">系统类型</label>
+                    <input class="modalip form-control col-md-9" placeholder="Password" type="password">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-md-4">
+                    <label class="modallb col-md-3">系统类型</label>
+                    <input class="modalip form-control " placeholder="Password" type="password">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label class="modallb col-md-3">系统类型</label>
+                    <input class="modalip form-control col-md-9" placeholder="Password" type="password">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label class="modallb col-md-3">校验类型</label>
+                      <div class="modalip col-md-9" style="float: left;padding-left:0px">
+                      <select name="account" class="form-control col-md-9">
+                        <option value="option 1">option 1</option>
+                        <option value="option 2">option 2</option>
+                        <option value="option 3">option 3</option>
+                        <option value="option 4">option 4</option>
+                      </select>
+                    </div>
+                  </div>
+                </div> 
+              </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-primary">保存</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="row">
+        <div collapse="isCollapsed" class="">
+
+            <form class="bs-example form-horizontal ng-pristine ng-valid">
+                <div class="form-group col-md-4">
+                  <label class="col-sm-3 control-label">编码</label>
+                  <div class="col-sm-9">
+                    <input class="form-control" placeholder="Email" type="email">
+                    
+                  </div>
+                </div>
+                <div class="form-group col-md-4">
+                  <label class="col-sm-3 control-label">名称</label>
+                  <div class="col-sm-9">
+                    <input class="form-control" placeholder="Password" type="password">
+                  </div>
+                </div>
+                <div class="form-group col-md-4">
+                  <label class="col-sm-3 control-label">系统级</label>
+                  <div class="col-sm-9">
+                    <input class="form-control" placeholder="Password" type="password">
+                  </div>
+                </div>
+          </form>
+
+        </div>
+    </div>
+    <div class="row wrapper">
+    <div class="table-responsive">
+      <table class="table table-striped table-bordered table-hover" id="sample_1">
+
+                  <thead>
+
+                    <tr class="statictabletr">
+
+                      <th style="width:8px;"><div class="checker"><span><input type="checkbox" class="group-checkable" data-set="#sample_1 .checkboxes"></span></div></th>
+
+                      <th>编码</th>
+
+                      <th class="hidden-480">名称</th>
+
+                      <th class="">配置值</th>
+
+                      <th class="hidden-480">系统级</th>
+
+                      <th>操作</th>
+
+                    </tr>
+
+                  </thead>
+
+                  <tbody>
+
+                    <tr class="odd gradeX">
+
+                      <td><div class="checker"><span><input type="checkbox" class="checkboxes" value="1"></span></div></td>
+
+                      <td>shuxer</td>
+
+                      <td class="hidden-480"><a href="#">123456</a></td>
+
+                      <td class="hidden-480">120</td>
+
+                      <td class="center hidden-480">122012</td>
+
+                      <td><a href="#" class="btn icn-do"><i class="icon-plus icon-white icn"></i>
+                      </a><a href="#" class="btn icn-do"><i class="icon-trash icon-white icn"></i>
+                      </a><a href="#" class="btn icn-do"><i class="icon-pencil icon-white icn"></i>
+                      </a><a href="#" class="btn icn-do"><i class="icon-magnifier  icon-white icn"></i></a></td>
+
+                    </tr>
+
+                    <tr class="odd gradeX">
+
+                      <td><div class="checker"><span><input type="checkbox" class="checkboxes" value="1"></span></div></td>
+
+                      <td>shuxer</td>
+
+                      <td class="hidden-480"><a href="#">123456</a></td>
+
+                      <td class="hidden-480">120</td>
+
+                      <td class="center hidden-480">122012</td>
+
+                      <td><a href="#" class="btn icn-do"><i class="icon-plus icon-white icn"></i>
+                      </a><a href="#" class="btn icn-do"><i class="icon-trash icon-white icn"></i>
+                      </a><a href="#" class="btn icn-do"><i class="icon-pencil icon-white icn"></i>
+                      </a><a href="#" class="btn icn-do"><i class="icon-magnifier  icon-white icn"></i></a></td>
+
+                    </tr>
+                    <tr class="odd gradeX">
+
+                      <td><div class="checker"><span><input type="checkbox" class="checkboxes" value="1"></span></div></td>
+
+                      <td>shuxer</td>
+
+                      <td class="hidden-480"><a href="#">123456</a></td>
+
+                      <td class="hidden-480">120</td>
+
+                      <td class="center hidden-480">122012</td>
+
+                      <td><a href="#" class="btn icn-do"><i class="icon-plus icon-white icn"></i>
+                      </a><a href="#" class="btn icn-do"><i class="icon-trash icon-white icn"></i>
+                      </a><a href="#" class="btn icn-do"><i class="icon-pencil icon-white icn"></i>
+                      </a><a href="#" class="btn icn-do"><i class="icon-magnifier  icon-white icn"></i></a></td>
+
+                    </tr>
+                    <tr class="odd gradeX">
+
+                      <td><div class="checker"><span><input type="checkbox" class="checkboxes" value="1"></span></div></td>
+
+                      <td>shuxer</td>
+
+                      <td class="hidden-480"><a href="#">123456</a></td>
+
+                      <td class="hidden-480">120</td>
+
+                      <td class="center hidden-480">122012</td>
+
+                      <td><a href="#" class="btn icn-do"><i class="icon-plus icon-white icn"></i>
+                      </a><a href="#" class="btn icn-do"><i class="icon-trash icon-white icn"></i>
+                      </a><a href="#" class="btn icn-do"><i class="icon-pencil icon-white icn"></i>
+                      </a><a href="#" class="btn icn-do"><i class="icon-magnifier  icon-white icn"></i></a></td>
+
+                    </tr>
+                    <tr class="odd gradeX">
+
+                      <td><div class="checker"><span><input type="checkbox" class="checkboxes" value="1"></span></div></td>
+
+                      <td>shuxer</td>
+
+                      <td class="hidden-480"><a href="#">123456</a></td>
+
+                      <td class="hidden-480">120</td>
+
+                      <td class="center hidden-480">122012</td>
+
+                      <td><a href="#" class="btn icn-do"><i class="icon-plus icon-white icn"></i>
+                      </a><a href="#" class="btn icn-do"><i class="icon-trash icon-white icn"></i>
+                      </a><a href="#" class="btn icn-do"><i class="icon-pencil icon-white icn"></i>
+                      </a><a href="#" class="btn icn-do"><i class="icon-magnifier  icon-white icn"></i></a></td>
+
+                    </tr>
+                    <tr class="odd gradeX">
+
+                      <td><div class="checker"><span><input type="checkbox" class="checkboxes" value="1"></span></div></td>
+
+                      <td>shuxer</td>
+
+                      <td class="hidden-480"><a href="#">123456</a></td>
+
+                      <td class="hidden-480">120</td>
+
+                      <td class="center hidden-480">122012</td>
+
+                      <td><a href="#" class="btn icn-do"><i class="icon-plus icon-white icn"></i>
+                      </a><a href="#" class="btn icn-do"><i class="icon-trash icon-white icn"></i>
+                      </a><a href="#" class="btn icn-do"><i class="icon-pencil icon-white icn"></i>
+                      </a><a href="#" class="btn icn-do"><i class="icon-magnifier  icon-white icn"></i></a></td>
+
+                    </tr>
+
+                  </tbody>
+
+                </table>
+    </div>
+    </div>
+    <footer class="panel-footer">
+      <div class="row">
+        <div class="col-sm-4 hidden-xs">
+          <select class="input-sm form-control w-sm inline v-middle">
+            <option value="0">Bulk action</option>
+            <option value="1">Delete selected</option>
+            <option value="2">Bulk edit</option>
+            <option value="3">Export</option>
+          </select>
+          <button class="btn btn-sm btn-default">Apply</button>                  
+        </div>
+        <div class="col-sm-4 text-center">
+          <small class="text-muted inline m-t-sm m-b-sm">showing 20-30 of 50 items</small>
+        </div>
+        <div class="col-sm-4 text-right text-center-xs">                
+          <ul class="pagination pagination-sm m-t-none m-b-none">
+            <li><a href><i class="fa fa-chevron-left"></i></a></li>
+            <li><a href>1</a></li>
+            <li><a href>2</a></li>
+            <li><a href>3</a></li>
+            <li><a href>4</a></li>
+            <li><a href>5</a></li>
+            <li><a href><i class="fa fa-chevron-right"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<style type="text/css">
+		
+		#allmap{height:500px;width:100%;}
+		#r-result{width:100%;}
+	</style>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=D1ZVL01wjo5ALN8sokZKHNdzgG1ov0VZ"></script>
+	<title>添加/删除覆盖物</title>
+</head>
+<body>
+<div class="bg-light lter b-b wrapper-md">
+  <h1 class="m-n font-thin h3">新区规划</h1>
+</div>
+	<div id="allmap"></div>
+	<div id="r-result">
+		<input type="button" value="添加覆盖物" />
+		<input type="button" value="删除覆盖物" />
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+	// 百度地图API功能
+	var map = new BMap.Map("allmap");
+	var point = new BMap.Point(120.219375416,30.2592444615);
+	map.centerAndZoom(point, 15);
+	
+	var marker = new BMap.Marker(new BMap.Point(120.219,30.259)); // 创建点
+	var polyline = new BMap.Polyline([
+		new BMap.Point(120.399, 30.910),
+		new BMap.Point(120.405, 30.920),
+		new BMap.Point(120.425, 30.900)
+	], {strokeColor:"blue", strokeWeight:2, strokeOpacity:0.5});   //创建折线
+	
+	var circle = new BMap.Circle(point,500,{strokeColor:"blue", strokeWeight:2, strokeOpacity:0.5}); //创建圆
+	
+	var polygon = new BMap.Polygon([
+		new BMap.Point(120.387112,30.920977),
+		new BMap.Point(120.385243,30.913063),
+		new BMap.Point(120.394226,30.917988),
+		new BMap.Point(120.401772,30.921364),
+		new BMap.Point(120.41248,30.927893)
+	], {strokeColor:"blue", strokeWeight:2, strokeOpacity:0.5});  //创建多边形
+	
+	var pStart = new BMap.Point(120.392214,30.918985);
+	var pEnd = new BMap.Point(120.41478,30.911901);
+	var rectangle = new BMap.Polygon([
+		new BMap.Point(pStart.lng,pStart.lat),
+		new BMap.Point(pEnd.lng,pStart.lat),
+		new BMap.Point(pEnd.lng,pEnd.lat),
+		new BMap.Point(pStart.lng,pEnd.lat)
+	], {strokeColor:"blue", strokeWeight:2, strokeOpacity:0.5});  //创建矩形
+	
+
+	add_overlay();
+	//添加覆盖物
+	function add_overlay(){
+		map.addOverlay(marker);            //增加点
+		map.addOverlay(polyline);          //增加折线
+		map.addOverlay(circle);            //增加圆
+		map.addOverlay(polygon);           //增加多边形
+		map.addOverlay(rectangle);         //增加矩形
+	}
+	//清除覆盖物
+	function remove_overlay(){
+		map.clearOverlays();         
+	}
+</script>

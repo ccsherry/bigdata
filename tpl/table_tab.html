@@ -1,0 +1,536 @@
+<div class="wrapper-md" >
+    <ol class="breadcrumb" style="padding-left: 0;">
+
+              <li>
+
+                <i class="icon-home"></i>
+
+                <a href="index.html">首页</a> 
+
+                <i class="icon-angle-right"></i>
+
+              </li>
+
+              <li>
+
+                <a href="#">网络规划</a>
+
+                <i class="icon-angle-right"></i>
+
+              </li>
+
+              <li><a href="#">站点设计管理</a></li>
+
+    </ol>
+  <div class="panel panel-default">
+
+
+    <div class="row wrapper">
+
+
+            <div class="portlet box grey">
+
+              <div class="portlet-body">
+
+                <table class="table table-striped table-bordered table-hover" id="sample_2">
+
+                  <thead>
+
+                    <tr>
+
+                      <th style="width:8px;"><div class="checker"><span><input class="group-checkable" data-set="#sample_2 .checkboxes" type="checkbox"></span></div></th>
+
+                      <th>序号</th>
+                     
+                      <th class="hidden-480">系统编号</th>
+                      <th class="hidden-480">系统名称</th>
+
+                      <th class="hidden-480">地区</th>
+                      <th class="hidden-480">县市</th>
+                      <th class="hidden-480">系统规模</th>
+                      <th class="hidden-480">创建日期</th>
+                      <th class="hidden-480">建设状态</th>
+
+                    </tr>
+
+                  </thead>
+
+                  <tbody>
+
+                    <tr class="odd gradeX">
+
+                      <td><div class="checker"><span><input class="checkboxes" value="1" type="checkbox"></span></div></td>
+
+                      <td>1</td>
+
+                      <td class="hidden-480">HZ87656</td>
+
+                      <td><a data-target="#modal1" data-toggle="modal">邻里中心</a></td>
+                      <td>杭州</td>
+                      <td>滨江</td>
+                      <td>中</td>
+                      <td>2018-4-18</td>
+                      <td>已竣工</td>
+                    </tr>
+
+                    <tr class="odd gradeX">
+
+                      <td><div class="checker"><span><input class="checkboxes" value="1" type="checkbox"></span></div></td>
+
+                      <td>2</td>
+
+                      <td class="hidden-480">HZ871256</td>
+
+                      <td><a href="">杭州桐庐工商大学食堂分布系统</a></td>
+                      <td>杭州</td>
+                      <td>桐庐</td>
+                      <td>大</td>
+                      <td>2018-4-19</td>
+                      <td>已竣工</td>
+                    </tr>
+
+                    <tr class="odd gradeX">
+
+                      <td><div class="checker"><span><input class="checkboxes" value="1" type="checkbox"></span></div></td>
+
+                      <td>2</td>
+
+                      <td class="hidden-480">HZ871256</td>
+
+                      <td><a href="">杭州桐庐工商大学食堂分布系统</a></td>
+                      <td>杭州</td>
+                      <td>桐庐</td>
+                      <td>大</td>
+                      <td>2018-4-19</td>
+                      <td>已竣工</td>
+                    </tr>
+
+                    <tr class="odd gradeX">
+
+                      <td><div class="checker"><span><input class="checkboxes" value="1" type="checkbox"></span></div></td>
+
+                      <td>2</td>
+
+                      <td class="hidden-480">HZ871256</td>
+
+                      <td><a href="">杭州桐庐工商大学食堂分布系统</a></td>
+                      <td>杭州</td>
+                      <td>桐庐</td>
+                      <td>大</td>
+                      <td>2018-4-19</td>
+                      <td>已竣工</td>
+                    </tr>
+
+                    <tr class="odd gradeX">
+
+                      <td><div class="checker"><span><input class="checkboxes" value="1" type="checkbox"></span></div></td>
+
+                      <td>2</td>
+
+                      <td class="hidden-480">HZ871256</td>
+
+                      <td><a href="">杭州桐庐工商大学食堂分布系统</a></td>
+                      <td>杭州</td>
+                      <td>桐庐</td>
+                      <td>大</td>
+                      <td>2018-4-19</td>
+                      <td>已竣工</td>
+                    </tr>
+
+                    <tr class="odd gradeX">
+
+                      <td><div class="checker"><span><input class="checkboxes" value="1" type="checkbox"></span></div></td>
+
+                      <td>2</td>
+
+                      <td class="hidden-480">HZ871256</td>
+
+                      <td><a href="">杭州桐庐工商大学食堂分布系统</a></td>
+                      <td>杭州</td>
+                      <td>桐庐</td>
+                      <td>大</td>
+                      <td>2018-4-19</td>
+                      <td>已竣工</td>
+                    </tr>
+        
+                  </tbody>
+
+                </table>
+
+              </div>
+
+            </div>
+
+<!--modal1-->
+      <div class="modal fade" id="modal1">
+      <div class="modal-dialog tab_modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+               <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+            </button>
+            <h4 class="modal-title">站点信息</h4>
+          </div>
+          <div class="modal-body tab_modalbd">
+              <tabset justified="true" class="tab-container">
+                <tab heading="站点信息">
+                  
+                  <div ng-controller="AccordionDemoCtrl">
+                    <accordion close-others="oneAtATime">
+                      <accordion-group is-open="status.open"  class="b-info">
+                          <accordion-heading>
+                              基础信息 <i class="pull-right fa fa-angle-up" ng-class="{'fa-angle-up': status.open, 'fa-angle-down': !status.open}"></i>
+                          </accordion-heading>
+                          <table class="table tab_table">
+                          <tbody>
+                            <tr>
+                              <th>系统编号</th>
+                              <td>HZ871256s1</td>
+                              <th>系统名称</th>
+                              <td colspan="3">邻里中心</td>
+                            </tr>
+                            <tr>
+                              <th>地址</th>
+                              <td colspan="5">滨江区东信大道以北xxx号</td>
+                            </tr>
+                            <tr>
+                              <th>县市/地区</th>
+                              <td>杭州市滨江区</td>
+                              <th>经度</th>
+                              <td>120.130409</td>
+                              <th>纬度</th>
+                              <td>30.180354</td>
+                            </tr>
+                            <tr>
+                              <th>县市/地区</th>
+                              <td>杭州市滨江区</td>
+                              <th>经度</th>
+                              <td>120.130409</td>
+                              <th>纬度</th>
+                              <td>30.180354</td>
+                            </tr>
+                            <tr>
+                              <th>建筑面积（平方米）</th>
+                              <td>11160</td>
+                              <th >楼宇层数</th>
+                              <td>15</td>
+                              <th>楼高（米）</th>
+                              <td>30</td>
+                            </tr>
+                            <tr>
+                              <th>电梯数量</th>
+                              <td>3</td>
+                              <th>电梯最高层数</th>
+                              <td colspan="3">15</td>
+                            </tr>
+                            <tr>
+                              <th>地下室数量</th>
+                              <td>3</td>
+                              <th>地下室层数</th>
+                              <td colspan="3">1</td>
+                            </tr>
+                            <tr>
+                              <th>系统分类</th>
+                              <td>室内分布</td>
+                              <th>系统规模</th>
+                              <td>中</td>
+                              <th>常见名称</th>
+                              <td>逸畅</td>
+                            </tr>
+                          </tbody>
+                          </table>
+                          
+                      </accordion-group>
+                    </accordion>
+
+                    <accordion>
+                      <accordion-group class="b-info">
+                          <accordion-heading>
+                              网络信息 <i class="pull-right fa fa-angle-up" ng-class="{'fa-angle-up': status.open, 'fa-angle-down': !status.open}"></i>
+                          </accordion-heading>
+                          <table class="table tab_table">
+                          <tbody>
+                            <tr>
+                              <th>GSM站名</th>
+                              <td>HZ871256s1</td>
+                              <th>GSM直放站数量</th>
+                              <td colspan="3">13</td>
+                            </tr>
+                            <tr>
+                              <th>地址</th>
+                              <td colspan="5">滨江区东信大道以北xxx号</td>
+                            </tr>
+                            <tr>
+                              <th>县市/地区</th>
+                              <td>杭州市滨江区</td>
+                              <th>经度</th>
+                              <td>120.130409</td>
+                              <th>纬度</th>
+                              <td>30.180354</td>
+                            </tr>
+                            <tr>
+                              <th>县市/地区</th>
+                              <td>杭州市滨江区</td>
+                              <th>经度</th>
+                              <td>120.130409</td>
+                              <th>纬度</th>
+                              <td>30.180354</td>
+                            </tr>
+                            <tr>
+                              <th>建筑面积（平方米）</th>
+                              <td>11160</td>
+                              <th >楼宇层数</th>
+                              <td>15</td>
+                              <th>楼高（米）</th>
+                              <td>30</td>
+                            </tr>
+                            <tr>
+                              <th>电梯数量</th>
+                              <td>3</td>
+                              <th>电梯最高层数</th>
+                              <td colspan="3">15</td>
+                            </tr>
+                            <tr>
+                              <th>地下室数量</th>
+                              <td>3</td>
+                              <th>地下室层数</th>
+                              <td colspan="3">1</td>
+                            </tr>
+                            <tr>
+                              <th>系统分类</th>
+                              <td>室内分布</td>
+                              <th>系统规模</th>
+                              <td>中</td>
+                              <th>常见名称</th>
+                              <td>逸畅</td>
+                            </tr>
+                          </tbody>
+                          </table>
+                          
+                      </accordion-group>
+                    </accordion>
+
+                    <accordion >
+                      <accordion-group class="b-info">
+                          <accordion-heading>
+                              业主信息 <i class="pull-right fa fa-angle-up" ng-class="{'fa-angle-up': status.open, 'fa-angle-down': !status.open}"></i>
+                          </accordion-heading>
+                          <table class="table tab_table">
+                          <tbody>
+                            <tr>
+                              <th>业主单位名称</th>
+                              <td>HZ871256s1</td>
+                              <th>业主联系人</th>
+                              <td colspan="3">xxx</td>
+                            </tr>
+                            <tr>
+                              <th>地址</th>
+                              <td colspan="5">滨江区东信大道以北xxx号</td>
+                            </tr>
+                            <tr>
+                              <th>县市/地区</th>
+                              <td>杭州市滨江区</td>
+                              <th>经度</th>
+                              <td>120.130409</td>
+                              <th>纬度</th>
+                              <td>30.180354</td>
+                            </tr>
+                            <tr>
+                              <th>县市/地区</th>
+                              <td>杭州市滨江区</td>
+                              <th>经度</th>
+                              <td>120.130409</td>
+                              <th>纬度</th>
+                              <td>30.180354</td>
+                            </tr>
+                            <tr>
+                              <th>建筑面积（平方米）</th>
+                              <td>11160</td>
+                              <th >楼宇层数</th>
+                              <td>15</td>
+                              <th>楼高（米）</th>
+                              <td>30</td>
+                            </tr>
+                            <tr>
+                              <th>电梯数量</th>
+                              <td>3</td>
+                              <th>电梯最高层数</th>
+                              <td colspan="3">15</td>
+                            </tr>
+                            <tr>
+                              <th>地下室数量</th>
+                              <td>3</td>
+                              <th>地下室层数</th>
+                              <td colspan="3">1</td>
+                            </tr>
+                            <tr>
+                              <th>系统分类</th>
+                              <td>室内分布</td>
+                              <th>系统规模</th>
+                              <td>中</td>
+                              <th>常见名称</th>
+                              <td>逸畅</td>
+                            </tr>
+                          </tbody>
+                          </table>
+                          
+                      </accordion-group>
+                    </accordion>
+        
+                  </div>
+                
+                </tab>
+                <tab heading="归档文件">
+                  <table class="table table-striped table-bordered table-hover" id="sample_2">
+                          <thead>
+
+                            <tr>
+                            
+                              <th>序号</th>
+
+                              <th>工程项目编号</th>
+
+                              <th>文件名</th>
+                              <th>文件类型</th>
+                              <th>归档日期</th>
+                              <th>上传阶段</th>
+                              <th>上传人</th>
+                              <th>上传日期</th>
+                              <th>操作</th>
+
+                            </tr>
+
+                          </thead>
+
+                          <tbody>
+
+                            <tr class="odd gradeX">
+                            
+
+                              <td>1</td>
+
+                              <td>Y6578236gj8727</td>
+
+                              <td>邻里中心室内分布设计方案</td>
+                              <td>图纸</td>
+                              <td>2018-3-2</td>
+                              <td>竣工阶段</td>
+                              <td>旭华强</td>
+                              <td>2018-4-9</td>
+                              <td><a href=""><i class="icon-book-open"></i>打开</a></td>
+
+                            </tr>
+                            <tr class="odd gradeX">
+                            
+
+                              <td>1</td>
+
+                              <td>Y6578236gj8727</td>
+
+                              <td>邻里中心室内分布设计方案</td>
+                              <td>图纸</td>
+                              <td>2018-3-2</td>
+                              <td>竣工阶段</td>
+                              <td>旭华强</td>
+                              <td>2018-4-9</td>
+                              <td><a href=""><i class="icon-book-open"></i>打开</a></td>
+
+                            </tr>
+                            <tr class="odd gradeX">
+                            
+
+                              <td>1</td>
+
+                              <td>Y6578236gj8727</td>
+
+                              <td>邻里中心室内分布设计方案</td>
+                              <td>图纸</td>
+                              <td>2018-3-2</td>
+                              <td>竣工阶段</td>
+                              <td>旭华强</td>
+                              <td>2018-4-9</td>
+                              <td><a href=""><i class="icon-book-open"></i>打开</a></td>
+
+                            </tr>
+                            
+                            <tr class="odd gradeX">
+                            
+
+                              <td>1</td>
+
+                              <td>Y6578236gj8727</td>
+
+                              <td>邻里中心室内分布设计方案</td>
+                              <td>图纸</td>
+                              <td>2018-3-2</td>
+                              <td>竣工阶段</td>
+                              <td>旭华强</td>
+                              <td>2018-4-9</td>
+                              <td><a href=""><i class="icon-book-open"></i>打开</a></td>
+
+                            </tr>
+                            <tr class="odd gradeX">
+                            
+
+                              <td>1</td>
+
+                              <td>Y6578236gj8727</td>
+
+                              <td>邻里中心室内分布设计方案</td>
+                              <td>图纸</td>
+                              <td>2018-3-2</td>
+                              <td>竣工阶段</td>
+                              <td>旭华强</td>
+                              <td>2018-4-9</td>
+                              <td><a href=""><i class="icon-book-open"></i>打开</a></td>
+
+                            </tr>
+
+                            
+
+                          </tbody>
+
+                  </table>
+                </tab>
+                
+              </tabset>
+          </div>
+          <div class="modal-footer tab_modalft">
+            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-primary">保存</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div>
+<!-- /.modal1 -->
+
+    </div>
+    <footer class="panel-footer">
+      <div class="row">
+        <div class="col-sm-4 hidden-xs">
+          <span>每页显示：</span><select class="input-sm form-control w-sm inline v-middle">
+            <option value="0">30条</option>
+            <option value="1">40条</option>
+            <option value="2">100条</option>
+            
+          </select>
+          <!-- <button class="btn btn-sm btn-default">转到</button>  -->                 
+        </div>
+        <div class="col-sm-4 text-center">
+          
+        </div>
+        <div class="col-sm-4 text-right text-center-xs">                
+          <ul class="pagination pagination-sm m-t-none m-b-none">
+            <li><a href><i class="fa fa-chevron-left"></i></a></li>
+            <li><a href>1</a></li>
+            <li><a href>2</a></li>
+            <li><a href>3</a></li>
+            <li><a href>4</a></li>
+            <li><a href>5</a></li>
+            <li><a href><i class="fa fa-chevron-right"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>

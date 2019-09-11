@@ -1,0 +1,38 @@
+<div class="login-bg">
+<div class="login-bord">
+<div class="container w-xxl w-auto-xs ">
+  <a href class="navbar-brand block m-t tt-login">智慧室分管理系统平台</a>
+  <div class="m-b-lg ">
+   
+    <form name="form" class="form-validation">
+      <!-- <div class="text-danger wrapper text-center" ng-show="authError">
+          {{authError}}
+      </div> -->
+      <div class="list-group list-group-sm">
+        <div class="list-group-item login-list">
+          <span class="icon icon-user lg_span"></span>
+          <input type="Email" placeholder="登陆账号" class="form-control no-border" ng-model="user.email" required>
+          <!-- <span class="input-group-btn">
+                <i class="icon-user"></i>
+          </span> -->
+          
+        </div>
+        <div class="list-group-item login-list">
+          <span class="icon icon-key lg_span"></span>
+          <input type="Password" placeholder="登录密码" class="form-control no-border" ng-model="user.password" required>
+        </div>
+
+        <div class="list-group-item login-list">
+            <img src="img/passcode.jpg" alt="" class="lg_span2" style="cursor:pointer;float: right;" onclick="this.src=this.src+'?'" width="100" height="32">
+            <input type="code" placeholder="请填写右侧的验证码" class="form-control no-border">
+            
+        </div>
+      </div>
+      <button type="submit" class="btn btn-lg btn-login btn-block" ng-click="login()" ng-disabled='form.$invalid'>登录</button>
+      
+    </form>
+  </div>
+ <!--  <div class="text-center" ng-include="'tpl/blocks/page_footer.html'"></div> -->
+</div>
+</div>
+</div>
